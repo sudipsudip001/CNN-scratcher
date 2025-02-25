@@ -40,6 +40,15 @@ class Preprocess:
         test_images = np.vstack(images).reshape(-1, 3, 32, 32).transpose(0, 2, 3, 1)
 
         return train_images, test_images
+
+    def preprocess(self, images):
+        #method for data preprocessing
+        
+        #greyscaling the image
+        image_grey = images[:, :, 0]
+
+        #rotate the images
+        image_flip = np.flip(image_grey, axis=1)
     
 def main():
     print("Hello world!")
