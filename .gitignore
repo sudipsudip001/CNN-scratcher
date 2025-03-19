@@ -2,3 +2,5 @@ check/
 dataset/
 checking_convolution.png
 .ipynb_checkpoints/
+conda_runner_torch.bat
+conda_runner_torch.py
