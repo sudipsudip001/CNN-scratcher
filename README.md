@@ -38,7 +38,7 @@ For example:
 ```
 Input: (1, 32, 32)
 After convolving with (2, 1, 3, 3): Output = (2, 30, 30)
-Formula: output_size = input_size - filter_size + stride
+Formula: (input_size - filter_size + 2 * padding) / stride + 1
 ```
 Similarly, for input `(2, 15, 15)`, after convolving with `(4, 2, 3, 3)`, we get a result of `(4, 12, 12)`. (*Note: The actual size would be (4, 13, 13), but I excluded one pixel to simplify the max-pooling operation.*)
 
